@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Prompt";
+  src: url(/fonts/Prompt-Bold.woff2) format("woff2"),
+    url(/fonts/Prompt-Bold.woff) format("woff"),
+    url(/fonts/Prompt-Bold.ttf) format("ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Prompt";
+  src: url(/fonts/Prompt-Light.woff2) format("woff2"),
+    url(/fonts/Prompt-Light.woff) format("woff"),
+    url(/fonts/Prompt-Light.ttf) format("ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Prompt-m";
+  src: url(/fonts/Prompt-Medium.woff2) format("woff2"),
+    url(/fonts/Prompt-Medium.woff) format("woff"),
+    url(/fonts/Prompt-Medium.ttf) format("ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Prompt";
+  src: url(/fonts/Prompt-SemiBold.woff2) format("woff2"),
+    url(/fonts/Prompt-SemiBold.woff) format("woff"),
+    url(/fonts/Prompt-SemiBold.ttf) format("ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(/fonts/Roboto-Regular.woff2) format("woff2"),
+    url(/fonts/Roboto-Regular.woff) format("woff"),
+    url(/fonts/Roboto-Regular.ttf) format("ttf");
+  font-weight: 400;
+}
