@@ -3,11 +3,21 @@ const swiper = new Swiper(".slider__custom", {
   direction: "horizontal",
   loop: true,
   speed: 500,
-  spaceBetween: 100,
-  effect: "fade",
-  // autoplay: {
-  //   delay: 5000,
-  // },
+  spaceBetween: 40,
+  slidesPerView: 1,
+
+  breakpoints: {
+    // when window width is >= 1000px
+    1330: {
+      spaceBetween: 40,
+      slidesPerView: 3,
+    },
+    // when window width is >= 560px
+    560: {
+      spaceBetween: 20,
+      slidesPerView: 2,
+    },
+  },
 
   pagination: {
     el: ".swiper-pagination",
@@ -17,9 +27,5 @@ const swiper = new Swiper(".slider__custom", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-  },
-
-  scrollbar: {
-    el: ".swiper-scrollbar",
   },
 });

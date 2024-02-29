@@ -1,0 +1,129 @@
+.content {
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+}
+
+.card__img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.card__link {
+  position: absolute;
+  top: calc(50% - 21px);
+  text-decoration: none;
+  color: #fff;
+  padding: 11px 28px;
+  border: 1px solid #fff;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 1.6px;
+}
+
+.card__img img {
+  width: 100%;
+  height: 200px;
+  filter: brightness(70%);
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 23px;
+}
+
+.card__sub-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.6rem;
+  letter-spacing: -1.5px;
+  line-height: 123%;
+  font-weight: 500;
+  color: #444444;
+}
+
+.card__text {
+  display: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+.card__svg {
+  width: 60px;
+  height: 60px;
+}
+
+@media only screen and (min-width: 560px) {
+  .card__text {
+    display: block;
+    padding: 0 40px;
+    text-align: center;
+  }
+  .card__img img {
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .content {
+    flex-direction: row;
+    gap: 0;
+    align-items: flex-start;
+  }
+  .card__content {
+    padding-top: 78px;
+    padding-bottom: 64px;
+    gap: 8px;
+  }
+
+  .card:nth-child(2) .card__content {
+    padding-top: 90px;
+  }
+
+  .card:first-child,
+  .card:last-child {
+    flex-direction: column-reverse;
+  }
+
+  .card {
+    gap: 0;
+  }
+  .card__img img {
+    height: 400px;
+  }
+  .card__svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .card__link {
+    display: none;
+  }
+  .card__sub-title {
+    letter-spacing: -2.6px;
+    line-height: 123%;
+    margin-top: 15px;
+  }
+  .card__text {
+    padding: 0 110px;
+    text-align: center;
+    line-height: 139%;
+  }
+}

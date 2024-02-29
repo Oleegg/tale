@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/fonts.css">
   <link rel="stylesheet" href="./styles/swiper-slider.css">
+  <link rel="stylesheet" href="./styles/slider.css">
+  <link rel="stylesheet" href="./styles/content.css">
+  <link rel="stylesheet" href="./styles/footer.css">
   <link rel="stylesheet" href="./styles/style.css">
   <title>Tale</title>
 </head>
@@ -69,7 +72,9 @@
             <svg class="card__svg">
               <use href="./images/svg/sprite.svg#industrial"></use>
             </svg>
-            <div class="card__text">Промышленное строительство</div>
+            <div class="card__sub-title">Промышленное строительство</div>
+            <div class="card__text">Мы обладаем богатым опытом в реализации проектов промышленного назначения, включая
+              заводы, склады, производственные цеха и другие объекты в данной сфере строительства.</div>
           </div>
           <div class="card__img">
             <img src="./images/png/img1-big.png" alt="img1">
@@ -81,7 +86,9 @@
             <svg class="card__svg">
               <use href="./images/svg/sprite.svg#energi"></use>
             </svg>
-            <div class="card__text">Энергетическое строительство</div>
+            <div class="card__sub-title">Энергетическое строительство</div>
+            <div class="card__text">Мы работаем над созданием эффективных и устойчивых энергетических систем, которые
+              способствуют снижению потребления ресурсов и улучшению экологической обстановки.</div>
           </div>
           <div class="card__img"><img src="./images/png/img5.png" alt="img1">
             <a href="#" class="card__link">Подробнее</a>
@@ -92,7 +99,9 @@
             <svg class="card__svg">
               <use href="./images/svg/sprite.svg#civil"></use>
             </svg>
-            <div class="card__text">Гражданское строительство</div>
+            <div class="card__sub-title">Гражданское строительство</div>
+            <div class="card__text">Наша компания является надежным партнером в сфере гражданского строительства,
+              предлагая широкий спектр услуг для различных объектов инфраструктуры и жилых комплексов.</div>
           </div>
           <div class="card__img"><img src="./images/png/img6.png" alt="img1">
             <a href="#" class="card__link">Подробнее</a>
@@ -102,35 +111,39 @@
 
       <section class="links">
         <div class="links__wrapper">
-          <div class="slide links__link"><img src="./images/png/img1.png" alt="img1">
-            <div class="link__text slide__text">
-              <div class="slide__text-title">
-                <p>Реконструкция ООО</p>
-                <p>Делком-40</p>
+          <div class="link__block">
+            <div class="slide links__link"><img src="./images/png/img1.png" alt="img1">
+              <div class="link__text slide__text">
+                <div class="link__text-title slide__text-title">
+                  <p>Реконструкция ООО</p>
+                  <p>Делком-40</p>
+                </div>
+              </div>
+            </div>
+            <div class="slide links__link"><img src="./images/png/img2.png" alt="img2">
+              <div class="link__text slide__text">
+                <div class="link__text-title slide__text-title">
+                  <p>Логистический центр</p>
+                  <p>в д. Дубовляны</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="slide links__link"><img src="./images/png/img2.png" alt="img2">
-            <div class="link__text slide__text">
-              <div class="slide__text-title">
-                <p>Логистический центр</p>
-                <p>в д. Дубовляны</p>
+          <div class="link__block">
+            <div class="slide links__link"><img src="./images/png/img3.png" alt="img3">
+              <div class="link__text slide__text">
+                <div class="link__text-title slide__text-title">
+                  <p>Реконструкция аэродром</p>
+                  <p>Орша</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="slide links__link"><img src="./images/png/img3.png" alt="img3">
-            <div class="link__text slide__text">
-              <div class="slide__text-title">
-                <p>Реконструкция аэродром</p>
-                <p>Орша</p>
-              </div>
-            </div>
-          </div>
-          <div class="slide links__link"><img src="./images/png/img4.png" alt="img4">
-            <div class="link__text slide__text">
-              <div class="slide__text-title">
-                <p>ОАО «Могилевхимволокно»</p>
-                <p></p>
+            <div class="slide links__link"><img src="./images/png/img4.png" alt="img4">
+              <div class="link__text slide__text">
+                <div class="link__text-title slide__text-title">
+                  <p>ОАО «Могилевхимволокно»</p>
+                  <p></p>
+                </div>
               </div>
             </div>
           </div>
@@ -138,26 +151,32 @@
       </section>
     </main>
   </div>
+
   <footer class="footer">
     <div class="footer__content card__content">
       <svg class="footer__svg">
         <use href="./images/svg/sprite.svg#energi"></use>
       </svg>
-      <div class="card__text">Энергетическое строительство</div>
-      <div class="footer__text">Мы работаем над созданием эффективных и устойчивых энергетических систем, которые
-        способствуют снижению потребления ресурсов и улучшению экологической обстановки. </div>
-      <a href="#" class="footer__link slide__text-link">Подробнее</a>
+      <div class="footer__block">
+        <div class="footer__title card__sub-title">Энергетическое строительство</div>
+        <div class="footer__text">Мы работаем над созданием эффективных и устойчивых энергетических систем, которые
+          способствуют снижению потребления ресурсов и улучшению экологической обстановки.</div>
+        <a href="#" class="footer__link slide__text-link">Подробнее</a>
+      </div>
     </div>
     <div class="footer__content card__content">
       <svg class="footer__svg">
         <use href="./images/svg/sprite.svg#civil"></use>
       </svg>
-      <div class="card__text">Энергетическое строительство</div>
-      <div class="footer__text">Наша компания является надежным партнером в сфере гражданского строительства,
-        предлагая широкий спектр услуг для различных объектов инфраструктуры и жилых комплексов.</div>
-      <a href="#" class="footer__link slide__text-link">Подробнее</a>
+      <div class="footer__block">
+        <div class="footer__title card__sub-title">Энергетическое строительство</div>
+        <div class="footer__text">Наша компания является надежным партнером в сфере гражданского строительства,
+          предлагая широкий спектр услуг для различных объектов инфраструктуры и жилых комплексов.</div>
+        <a href="#" class="footer__link slide__text-link">Подробнее</a>
+      </div>
     </div>
   </footer>
+
   <script src="./js/swiper-slider.js"></script>
   <script src="./js/index.js"></script>
 </body>
